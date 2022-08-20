@@ -21,3 +21,21 @@ Run the following to install:
 pip install nystromformer
 ```
 
+## Developing nystromformer
+
+To install `nystromformer`, along with tools you need to develop and test, run the following in your virtualenv:
+
+```sh
+git clone https://github.com/Rishit-dagli/Nystromformer.git
+# or clone your own fork
+
+cd Nystromformer
+pip install -e .[dev]
+```
+
+To run rank and shape tests run the following:
+
+```
+pytest -v --disable-warnings --cov
+```
+
