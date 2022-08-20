@@ -39,3 +39,46 @@ To run rank and shape tests run the following:
 pytest -v --disable-warnings --cov
 ```
 
+## Usage
+
+### Nystrom Attention
+
+```py
+import tensorflow as tf
+from nystromformer import NystromAttention
+
+attn = NystromAttention(
+    dim = 512,
+    dim_head = 64,
+    heads = 8,
+    num_landmarks = 256,    # number of landmarks
+    pinv_iterations = 6,    # number of moore-penrose iterations for approximating pinverse. 6 was recommended by the paper
+    residual = True         # whether to do an extra residual with the value or not. supposedly faster convergence if turned on
+)
+
+x = tf.random.normal((1, 16384, 512))
+mask = tf.ones((1, 16384), dtype=tf.bool)
+
+attn(x, mask = mask) # (1, 16384, 512)
+```
+
+### Nystromformer
+
+```py
+import tensorflow as tf
+from nystromformer import Nystromformer
+
+model = Nystromformer(
+    dim = 512,
+    dim_head = 64,
+    heads = 8,
+    depth = 6,
+    num_landmarks = 256,
+    pinv_iterations = 6
+)
+
+x = tf.random.normal((1, 16384, 512))
+mask = tf.ones((1, 16384), dtype=tf.bool)
+
+model(x, mask = mask) # (1, 16384, 512)
+```
