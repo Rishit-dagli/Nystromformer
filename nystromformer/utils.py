@@ -21,3 +21,13 @@ class MoorePenrosePseudoinverse(tf.keras.layers.Layer):
             z = 0.25 * z @ (13 * identity - (inputs_bbm_z @ (15 * identity - (inputs_bbm_z @ (7 * identity - inputs_bbm_z)))))
         
         return z
+
+class PreNorm(tf.keras.layers.Layer):
+    def __init__(self, fn, **kwargs):
+        super(PreNorm, self).__init__(**kwargs)
+        self.fn = fn
+        self.norm = tf.keras.layers.LayerNormalization(axis=-1)
+
+    def call(self, x, **kwargs):
+        x = self.norm(x)
+        return self.fn(x, **kwargs)
