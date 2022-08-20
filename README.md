@@ -108,7 +108,9 @@ Have any questions, doubts or want to present your opinions, views? You're alway
 ```
 
 [Yannic Kilcher's Video](https://www.youtube.com/watch?v=m-zrcmRd7E4)
+
 [PyTorch Implementation](https://github.com/mlpen/Nystromformer)
+
 [PyTorch Implementation](https://github.com/lucidrains/nystrom-attention)
 
 ## License
