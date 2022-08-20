@@ -13,5 +13,11 @@ An implementation of the [Nyströmformer: A Nyström-Based Algorithm for Approxi
 
 ![](media/nystromformer.png)
 
+## Installation
 
+Run the following to install:
+
+```sh
+pip install nystromformer
+```
 
