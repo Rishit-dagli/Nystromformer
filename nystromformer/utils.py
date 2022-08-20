@@ -28,9 +28,9 @@ class PreNorm(tf.keras.layers.Layer):
         self.fn = fn
         self.norm = tf.keras.layers.LayerNormalization(axis=-1)
 
-    def call(self, inputs):
+    def call(self, inputs, **kwargs):
         inputs = self.norm(inputs)
-        return self.fn(inputs)
+        return self.fn(inputs, **kwargs)
 
 class FeedForward(tf.keras.layers.Layer):
     def __init__(self, dim, mult = 4, dropout = 0., **kwargs):
