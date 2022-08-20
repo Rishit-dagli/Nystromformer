@@ -61,6 +61,7 @@ setup(
             "twine",
             "numpy",
             "black",
+            "isort",
             "pytest",
             "pytest-cov",
             "parameterized",
