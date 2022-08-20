@@ -9,5 +9,9 @@
 [![GitHub followers](https://img.shields.io/github/followers/Rishit-dagli?label=Follow&style=social)](https://github.com/Rishit-dagli)
 [![Twitter Follow](https://img.shields.io/twitter/follow/rishit_dagli?style=social)](https://twitter.com/intent/follow?screen_name=rishit_dagli)
 
+An implementation of the [Nyströmformer: A Nyström-Based Algorithm for Approximating Self-Attention](https://arxiv.org/abs/2102.03902) paper by Xiong et al. The self-attention mechanism that encodes the influence or dependence of other tokens on each specific token is a key component of the performance of Transformers. This uses the Nyström method to approximate standard self-attention with O(n) complexity allowing to exhibit scalability as a function of sequence length.
+
+![](media/nystromformer.png)
+
 
 
