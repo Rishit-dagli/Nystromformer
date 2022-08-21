@@ -1,5 +1,6 @@
 # Nystromformer [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FNystromformer)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FRishit-dagli%2FNystromformer)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Rishit-dagli/Nystromformer/blob/main/example/nystromformer-example.ipynb)
 ![PyPI](https://img.shields.io/pypi/v/Nystromformer)
 [![Run Tests](https://github.com/Rishit-dagli/Nystromformer/actions/workflows/tests.yml/badge.svg)](https://github.com/Rishit-dagli/Nystromformer/actions/workflows/tests.yml)
 [![Upload Python Package](https://github.com/Rishit-dagli/Nystromformer/actions/workflows/python-publish.yml/badge.svg)](https://github.com/Rishit-dagli/Nystromformer/actions/workflows/python-publish.yml)
