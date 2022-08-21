@@ -9,9 +9,9 @@ from parameterized import parameterized
 from .nystromformer import Nystromformer
 
 
-class NystromAttentionTest(tf.test.TestCase):
+class NystromformerTest(tf.test.TestCase):
     def setUp(self):
-        super(NystromAttentionTest, self).setUp()
+        super(NystromformerTest, self).setUp()
 
     def generate_params():
         param_list = []
